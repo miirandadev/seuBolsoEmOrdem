@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    background-color: rgb(42, 40, 40);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(71, 17, 105);    
+}
+
+a.btn{
+    color: white;
+    text-decoration: none;
+}
+
+li.bnt{
+    display: inline-block;
+    margin-right: 40px;
+    text-decoration: none;
+}
+
+
+#title{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+article{
+    margin-left: 110px;
+    text-align: center;
+    margin-top: -580px;
+}
+
+h2{
+    color: rgb(204, 167, 239);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    margin-top: -15px;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 25px;
+    padding: 5px;
+    color:beige;
+    font-size: 18px;
+}
+
+img{
+    width: 20%;
+}
+
+nav.menu-lateral{
+    width: 180px;
+    height: 138%;
+    background-color: rgb(34,34,34);
+    padding: 1px 0px 1%;
+    box-shadow: 4px 1px 0px rgb(132, 14, 201);
+
+    position:relative;
+    top: 0;
+    left: 0;
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu{
+    transition: 1s;
+}
+
+ul li.ativo{
+    background-color: rgb(132, 14, 201);
+}
+
+ul li.item-menu:hover{
+    background-color:rgb(132, 14, 201);
+}
+
+ul li.item-menu a{
+    text-decoration: none;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 5px 3.5%;
+    display: flex;
+    line-height: 40px;
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 15px;
+}
+
+ul li.item-menu a .icon > i{
+    font-size: 10px;
+}
+
+

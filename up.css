@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500&family=Noto+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    background-color: rgb(42, 40, 40);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(71, 17, 105);    
+}
+
+
+#title{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+
+a.btn{
+    color: white;
+    text-decoration: none;
+}
+
+li.bnt{
+    display: inline-block;
+    margin-right: 40px;
+    text-decoration: none;    
+}
+
+nav.menu-lateral{
+    width: 12%;
+    height: 710px;
+    background-color: rgb(34,34,34);
+    padding: 1px 0px 1%;
+    box-shadow: 4px 1px 0px rgb(132, 14, 201);
+
+    position:relative;
+    top: 0;
+    left: 0;
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu{
+    transition: 1s;
+}
+
+ul li.ativo{
+    background-color: rgb(132, 14, 201);
+}
+
+ul li.item-menu:hover{
+    background-color:rgb(132, 14, 201);
+}
+
+ul li.item-menu a{
+    text-decoration: none;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 5px 3.5%;
+    display: flex;
+    line-height: 40px;
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 15px;
+}
+
+ul li.item-menu a .icon > i{
+    font-size: 10px;
+}
+
+
+th{
+    background-color: rgb(84, 24, 122);
+    color:black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+td{
+    background-color: rgb(164, 133, 182);
+    color: black;
+}
+
+table{
+    margin-left: 17%;
+    margin-top: -40%;
+}
+
+.paragrafo{
+    margin-left: 17%;
+    margin-top: -32%;
+}
+
+h2{
+    color: rgb(194, 154, 218);
+    font-size: 30px;
+}
+
+p{
+    color: white;
+}
+
+
+ 

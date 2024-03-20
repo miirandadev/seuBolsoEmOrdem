@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="up.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Abril</title>
+
+    <script>
+        function updateTotal() {
+          // Obter todas as linhas da tabela
+          const rows = document.querySelectorAll("table tr");
+          
+          // Iniciar a soma total como 0
+          let total = 0;
+    
+          // Percorrer todas as linhas, exceto a primeira (que contém os cabeçalhos)
+          for (let i = 1; i < rows.length; i++) {
+            const cells = rows[i].querySelectorAll("td");
+            
+            // Obter os valores de entrada e saída da linha atual
+            const entrada = parseFloat(cells[1].innerText) || 0;
+            const saida = parseFloat(cells[2].innerText) || 0;
+    
+            // Calcular o total da linha
+            const linhaTotal = entrada - saida;
+    
+            // Atualizar a célula de total da linha atual
+            cells[3].innerText = linhaTotal.toFixed(2);
+    
+            // Somar ao total geral
+            total += linhaTotal;
+          }
+    
+          // Atualizar a célula de total geral na última linha
+          const totalGeralCell = rows[rows.length - 1].querySelectorAll("td")[3];
+          totalGeralCell.innerText = total.toFixed(2);
+        }
+      </script>
+   
+</head>
+<body>
+
+    <header>
+        <div id="title">
+            <h1>Seu bolso</h1>
+            <h1>em ordem</h1>
+        </div>
+
+        <div>
+            
+            <a class="btn" href="index.html"><li class="bnt">Página Inicial</li></a>
+        </div>
+    </header>
+
+    <nav class="menu-lateral">
+
+    <ul>  
+        <li class="item-menu">
+            <a href="acess.html">
+                <span class="icon"><i class="bi bi-caret-right"></i></span>
+                <span class="txt-link">Apresentação</span>
+            </a>
+        </li>
+
+        <li class="item-menu">
+            <a href="janeiro.html">
+                <span class="icon"><i class="bi bi-caret-right"></i></span>
+                <span class="txt-link">Janeiro</span>
+            </a>
+        </li>
+
+        <li class="item-menu">
+            <a href="fevereiro.html">
+                <span class="icon"><i class="bi bi-caret-right"></i></span>
+                <span class="txt-link">Fevereiro</span>
+            </a>
+        </li>
+
+        <li class="item-menu">
+            <a href="marco.html">
+                <span class="icon"><i class="bi bi-caret-right"></i></span>
+                <span class="txt-link">Março</span>
+            </a>
+        </li>
+
+        <li class="item-menu ativo">
+            <a href="abril.html">
+                <span class="icon"><i class="bi bi-caret-right"></i></span>
+                <span class="txt-link">Abril</span>
+            </a>
+        </li>
+
+        <li class="item-menu">
+            <a href="maio.html">
+                <span class="icon"><i class="bi bi-caret-right"></i></span>
+                <span class="txt-link">Maio</span>
+            </a>
+        </li>
+
+        <li class="item-menu">
+            <a href="junho.html">
+                <span class="icon"><i class="bi bi-caret-right"></i></span>
+                <span class="txt-link">Junho</span>
+            </a>
+        </li>
+
+        <li class="item-menu">
+            <a href="julho.html">
+                <span class="icon"><i class="bi bi-caret-right"></i></span>
+                <span class="txt-link">Julho</span>
+            </a>
+        </li>
+
+        <li class="item-menu">
+            <a href="agosto.html">
+                <span class="icon"><i class="bi bi-caret-right"></i></span>
+                <span class="txt-link">Agosto</span>
+            </a>
+        </li>
+
+        <li class="item-menu">
+            <a href="setembro.html">
+                <span class="icon"><i class="bi bi-caret-right"></i></span>
+                <span class="txt-link">Setembro</span>
+            </a>
+        </li>
+
+        <li class="item-menu">
+            <a href="outubro.html">
+                <span class="icon"><i class="bi bi-caret-right"></i></span>
+                <span class="txt-link">Outubro</span>
+            </a>
+        </li>
+
+        <li class="item-menu">
+            <a href="novembro.html">
+                <span class="icon"><i class="bi bi-caret-right"></i></span>
+                <span class="txt-link">Novembro</span>
+            </a>
+        </li>
+
+        <li class="item-menu">
+            <a href="dezembro.html">
+                <span class="icon"><i class="bi bi-caret-right"></i></span>
+                <span class="txt-link">Dezembro</span>
+            </a>
+        </li>
+
+        <li class="item-menu">
+            <a href="links.html">
+              <span class="icon"><i class="bi bi-caret-right"></i></span>
+              <span class="txt-link">Compras Futuras</span>
+            </a>
+          </li>
+
+    </ul>    
+ </nav>
+  
+
+ <table border="1">
+    <tr>
+      <th>Descrição</th>
+      <th>Entrada</th>
+      <th>Saída</th>
+      <th>Total</th>
+    </tr>
+    
+    <tr>
+      <td contenteditable="true">Escreva aqui</td>
+      <td contenteditable="true" oninput="updateTotal()">0</td>
+      <td contenteditable="true" oninput="updateTotal()">0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+     <td contenteditable="true">Escreva aqui</td>
+     <td contenteditable="true" oninput="updateTotal()">0</td>
+     <td contenteditable="true" oninput="updateTotal()">0</td>
+     <td>0</td>
+   </tr>
+   <tr>
+     <td contenteditable="true">Escreva aqui</td>
+     <td contenteditable="true" oninput="updateTotal()">0</td>
+     <td contenteditable="true" oninput="updateTotal()">0</td>
+     <td>0</td>
+   </tr>
+   <tr>
+     <td contenteditable="true">Escreva aqui</td>
+     <td contenteditable="true" oninput="updateTotal()">0</td>
+     <td contenteditable="true" oninput="updateTotal()">0</td>
+     <td>0</td>
+   </tr>
+   <tr>
+     <td contenteditable="true">Escreva aqui</td>
+     <td contenteditable="true" oninput="updateTotal()">0</td>
+     <td contenteditable="true" oninput="updateTotal()">0</td>
+     <td>0</td>
+   </tr>
+   <tr>
+     <td contenteditable="true">Escreva aqui</td>
+     <td contenteditable="true" oninput="updateTotal()">0</td>
+     <td contenteditable="true" oninput="updateTotal()">0</td>
+     <td>0</td>
+   </tr>
+   <tr>
+     <td contenteditable="true">Escreva aqui</td>
+     <td contenteditable="true" oninput="updateTotal()">0</td>
+     <td contenteditable="true" oninput="updateTotal()">0</td>
+     <td>0</td>
+   </tr>
+   <tr>
+     <td contenteditable="true">Escreva aqui</td>
+     <td contenteditable="true" oninput="updateTotal()">0</td>
+     <td contenteditable="true" oninput="updateTotal()">0</td>
+     <td>0</td>
+   </tr>
+   <tr>
+     <td contenteditable="true">Escreva aqui</td>
+     <td contenteditable="true" oninput="updateTotal()">0</td>
+     <td contenteditable="true" oninput="updateTotal()">0</td>
+     <td>0</td>
+   </tr>
+   <tr>
+     <td contenteditable="true">Escreva aqui</td>
+     <td contenteditable="true" oninput="updateTotal()">0</td>
+     <td contenteditable="true" oninput="updateTotal()">0</td>
+     <td>0</td>
+   </tr>
+   <tr>
+     <td contenteditable="true">Escreva aqui</td>
+     <td contenteditable="true" oninput="updateTotal()">0</td>
+     <td contenteditable="true" oninput="updateTotal()">0</td>
+     <td>0</td>
+   </tr>
+   <tr>
+     <td contenteditable="true">Escreva aqui</td>
+     <td contenteditable="true" oninput="updateTotal()">0</td>
+     <td contenteditable="true" oninput="updateTotal()">0</td>
+     <td>0</td>
+   </tr>
+   <tr>
+     <td contenteditable="true">Escreva aqui</td>
+     <td contenteditable="true" oninput="updateTotal()">0</td>
+     <td contenteditable="true" oninput="updateTotal()">0</td>
+     <td>0</td>
+   </tr>
+   <tr>
+     <td contenteditable="true">Escreva aqui</td>
+     <td contenteditable="true" oninput="updateTotal()">0</td>
+     <td contenteditable="true" oninput="updateTotal()">0</td>
+     <td>0</td>
+   </tr>
+   <tr>
+     <td contenteditable="true">Escreva aqui</td>
+     <td contenteditable="true" oninput="updateTotal()">0</td>
+     <td contenteditable="true" oninput="updateTotal()">0</td>
+     <td>0</td>
+   </tr>
+  
+    <tr>
+      <td>Total Geral</td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+    </tr>
+  </table>
+ 
+ <div class="paragrafo">
+ 
+     <h2> Tabela Financeira Abril</h2>
+ 
+     <p><br>Coloque nessa tabela seus gastos e contas, valores que entram e saem de sua conta,<br>
+          e assim, voce vai tendo um maior controle dos seus gastos! </p>
+ </div>
+
+
+
+</body>
+
+</html>
